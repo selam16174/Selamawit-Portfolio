@@ -1,0 +1,170 @@
+
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5fc;
+    color: #25213a;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background-color: #21183d;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #c4a7ff;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #c4a7ff;
+}
+
+/* Home section */
+.hero {
+    min-height: 75vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(135deg, #f7f5fc, #e8defb);
+}
+
+.intro {
+    color: #7650ba;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    margin: 12px 0;
+}
+
+.hero h2 {
+    color: #7650ba;
+    margin-bottom: 15px;
+}
+
+.hero > p:not(.intro) {
+    max-width: 600px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #6541a5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #43276f;
+    transform: translateY(-3px);
+}
+
+/* General sections */
+.section {
+    padding: 75px 8%;
+}
+
+.section h2 {
+    color: #43276f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    padding: 10px 18px;
+    background-color: #e8defb;
+    border-radius: 20px;
+}
+
+/* Project card */
+.project-card {
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #21183d12;
+    max-width: 450px;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    background-color: #21183d;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+    .profile-image {
+    display:black;
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important
+    object-fit: cover;
+    }
